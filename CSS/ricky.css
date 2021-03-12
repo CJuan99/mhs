@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+
+body{
+    background-color:#f5f5f5;
+}
+
+/*header image*/
+.headerUser{
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../images/building2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/building2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 60vh;
+}
+.headerUser h1{
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Applications - Start*/
+.application {
+    background-color:white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.application a{
+    text-decoration: none;
+}
+
+.application h2 {
+    font-size: 28px;
+}
+
+.application h2 a {
+      color: #000000;
+}
+
+.application .desc {
+    width: calc(100% - 160px);
+}
+
+.application .desc .timeAgo {
+    color: #2874fa;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.application .appBtn {
+    width: 160px;
+}
+
+.application .appBtn div .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.application .icon{
+    background: rgba(253, 40, 82, 0);
+}
+
+.application .icon i {
+    color: rgba(253, 40, 82, 0);
+}
+
+.application .roomDetails span, .application .roomDetails i{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.application:hover{
+    box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, 0.1) !important;
+    border: none;
+    transition: .1s all ease;
+}
+
+.application:hover .icon{
+    background: rgba(253, 40, 82, 0.1) !important;
+    transition: .3s all ease;
+}
+
+.application:hover .icon i{
+    color: rgba(253, 40, 82, 0.2) !important;
+    transition: .3s all ease;
+}
+
+.application .icon:hover{
+    background: #fd2852 !important;
+    opacity: 1;
+    transition: .3s all ease;
+}
+
+.application .icon:hover i{
+    color: #ffffff !important;
+    opacity: 1;
+}
+
+.btnShadow:hover{
+    background: #1858c9;
+    transition: .3s all ease;
+}
+/*Applications - End*/
+
+/*Recently Registed Residence - Start*/
+.recentlyResidence a{
+    text-decoration:none;
+}
+
+.residenceInfo h5 a{
+    color:#000000;
+}
+
+.residenceInfo span{
+    font-weight:bold;
+    font-size:13px;
+    color:rgba(35, 36, 35, 0.7)
+}
+
+.numUnits{
+    background:rgba(70, 236, 59, 0.4);
+}
+/*Recently Registed Residence - End*/
+
+/*New Applications (Officer) - Start*/
+.newApplication{
+    background-color:;
+}
+/*New Applications (Officer) - End*/
+
+/*Residence Info (Officer) - Start*/
+#r_Info{
+    font-size: 25px;
+}
+
+.statusWidth{
+    width:150px;
+}
+
+.tableHeight{
+    min-height:100px;
+}
+/*Residence Info (Officer) - End*/
+
+/*Responsive*/
+@media (max-width: 992px){
+    /*Applications - Start*/
+    .application .desc{
+        width:100%;
+    }
+    .application .appBtn{
+        width:100%;
+    }
+    /*Application - End*/
+    .py-2{
+        text-align:center;
+    }
+    .py-2 h5{
+        font-size:25px;
+    }
+    .py-2 span{
+        font-size:15px;
+    }
+}
+
+
+/*---navigation--*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 80;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+#mainNav {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color:#2c292f;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+#mainNav .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 1000;
+  font-size: 2em;
+  color:#FFCC00;
+  letter-spacing: 0.2rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color:#FFCC00;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #fff;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #fff !important;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 1rem;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+  }
+
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+
+  #mainNav.navbar-scrolled {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #2c292f ;
+  }
+
+  #mainNav.navbar-scrolled .navbar-brand {
+    color:  #FFCC00;
+  }
+
+  #mainNav.navbar-scrolled .navbar-brand:hover {
+    color: #ffffff;
+  }
+
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+    color:#FFCC00;
+  }
+
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+  }
+}
+
+.navbar-toggler {
+  cursor: pointer;
+}
+*footer*/
+.flinks a:hover{
+  color: #FFCC00;
+  text-decoration: none;
+}
+
+#logo{
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 1000;
+  font-size: 2em;
+  color: #FFCC00;
+  letter-spacing: 0.2rem;
+}
+ i.icon{
+  color: #FFCC00;
+}
